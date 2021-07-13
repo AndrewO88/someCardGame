@@ -2,9 +2,13 @@
 .scene {
     width: 200px;
     height: 260px;
-    border: 1px solid #CCC;
     margin: 40px 0;
     perspective: 600px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
 }
 
 .card {
@@ -34,10 +38,12 @@
 }
 
 .card__face--front {
-    background: red;
+    background-size:100% 100%;
+    background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/22413.png')
 }
 
 .card__face--back {
-    background: blue;
+    background-size:100% 100%;
     transform: rotateY(180deg);
+    border-radius: 20px;
 }

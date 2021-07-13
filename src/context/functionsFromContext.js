@@ -1,3 +1,5 @@
+import {characters} from "../state/state";
+
 function initCardObj(obj, quantityCards){
     function shuffle(array) {
         let currentIndex = array.length,  randomIndex;
@@ -27,6 +29,9 @@ function initCardObj(obj, quantityCards){
             case 'state': {
                 return  obj[index + 1]['state'] = false;
             }
+            case 'character': {
+                return  obj[index + 1]['character'] = characters[numberCard];
+            }
             default: {
                 throw new Error(`Unhandled propsName type: ${propsName}`)
             }
@@ -45,6 +50,7 @@ function initCardObj(obj, quantityCards){
         createCardsProps(obj, index, 'numberCard', numberCard)
         createCardsProps(obj, index, 'disabled' )
         createCardsProps(obj, index, 'state' )
+        createCardsProps(obj, index, 'character', numberCard)
     })
     return obj;
 }

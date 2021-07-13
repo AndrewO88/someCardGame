@@ -6,7 +6,6 @@ import {useCustomState} from "../../../context/context";
 const SettingComponent = () => {
     const {state: globalState, dispatch} = useCustomState()
     const handleChange = (event) => {
-        console.log('event.target.value', event.target.value);
         dispatch({type: 'setQuantityCards', quantityCards: event.target.value});
     };
     return (

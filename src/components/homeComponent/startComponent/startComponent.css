@@ -1,0 +1,38 @@
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+  min-height: 100vh;
+  background-size:100% 100%;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bdf77e83-0201-4f49-ae4e-76056c3b0cb7/d85dwzg-b4d90868-9bb5-471a-a936-a1a51519e220.jpg/v1/fill/w_1024,h_657,q_75,strp/the_simpsons_all_characters_by_dack23_d85dwzg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JkZjc3ZTgzLTAyMDEtNGY0OS1hZTRlLTc2MDU2YzNiMGNiN1wvZDg1ZHd6Zy1iNGQ5MDg2OC05YmI1LTQ3MWEtYTkzNi1hMWE1MTUxOWUyMjAuanBnIiwiaGVpZ2h0IjoiPD02NTciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9iZGY3N2U4My0wMjAxLTRmNDktYWU0ZS03NjA1NmMzYjBjYjdcL2RhY2syMy00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.3RcwfgRK3Tz6QtJ14juTcDZqzJwV71LrlZmomgnbb8c');
+}
+.background_button {
+  border-radius: 20px !important;
+  margin: 20px !important;
+  font-weight: 900;
+  font-size: xx-large !important;
+  font-family: 'Indie Flower', cursive  !important;
+}
+.sound_button {
+  margin-top: 80px !important;
+  color: aliceblue !important;
+  width: 5px;
+  height: 5px;
+  background-color: #ff0088;
+  border-radius: 50%;
+  animation: shadow 1s infinite alternate;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 55px 10px #ff0088;
+  }
+  to {
+    box-shadow: 0 0 90px 20px #00e5ff;
+  }
+}

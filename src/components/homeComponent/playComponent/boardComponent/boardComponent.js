@@ -9,7 +9,6 @@ const BoardComponent = () => {
     const {state: globalState, dispatch} = useCustomState()
     const cardsArr = Object.values(globalState.cardsObj);
 
-    console.log('globalState', globalState);
     useEffect(() => {
         const cardsNumbers = Object.values(globalState.compareObj)
         const ids = Object.keys(globalState.compareObj)
